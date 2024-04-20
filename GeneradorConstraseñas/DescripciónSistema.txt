@@ -1,0 +1,48 @@
+Este programa permite generar contraseñas aleatorias con diferentes tipos de caracteres (mayúsculas, minúsculas, números y especiales) y exportarlas a un archivo de texto.
+Funciones Principales
+
+    Validación de Longitud
+        validar_longitud(longitud)
+            Esta función verifica que la longitud ingresada para la contraseña sea un valor numérico válido.
+            Si se ingresa un valor no numérico, muestra un mensaje de error y devuelve False.
+            De lo contrario, devuelve True.
+
+    Validación de Tipos de Caracteres
+        validar_tipos_caracteres(longitud, tipos_caracteres, contraseña_generada)
+            Esta función verifica que la contraseña generada cumpla con los tipos de caracteres seleccionados.
+            Verifica la presencia de mayúsculas, minúsculas, números y caracteres especiales según lo especificado.
+            Devuelve True si la contraseña cumple con todos los tipos de caracteres, de lo contrario, devuelve False.
+
+    Limpiar Campos
+        limpiar_campos()
+            Esta función limpia todos los campos de entrada y salida en la interfaz gráfica.
+
+    Salir del Sistema
+        salir_del_sistema()
+            Esta función muestra un mensaje de confirmación al usuario antes de cerrar la aplicación.
+
+    Generar Contraseña
+        generar_contraseña()
+            Esta función genera una contraseña aleatoria utilizando los tipos de caracteres seleccionados y la longitud especificada.
+            Verifica que se haya seleccionado al menos un tipo de caracteres y muestra errores si no se cumple esta condición o si la contraseña generada no cumple con los tipos de caracteres.
+            Una vez generada una contraseña válida, la muestra en el área de salida de la interfaz gráfica.
+
+    Exportar Contraseña
+        exportar_contraseña()
+            Esta función exporta la contraseña generada a un archivo de texto seleccionado por el usuario.
+
+Interfaz Gráfica
+
+La interfaz gráfica se compone de los siguientes elementos:
+
+    Longitud Deseada: Entrada para especificar la longitud deseada de la contraseña.
+    Tipo de Caracteres: Selección de tipos de caracteres (mayúsculas, minúsculas, números y especiales) a incluir en la contraseña.
+    Generar: Botón para generar una nueva contraseña.
+    Exportar Contraseña: Botón para exportar la contraseña generada a un archivo de texto.
+    Limpiar Campos: Botón para limpiar todos los campos.
+    Salir del Sistema: Botón para cerrar la aplicación.
+    Área de Salida: Mostrar la contraseña generada o mensajes de error.
+
+Ejecución Principal
+
+El programa comienza ejecutando la función main_window(), que inicializa la interfaz gráfica y configura todos los elementos necesarios para la generación y exportación de contraseñas.
