@@ -1,0 +1,53 @@
+En el presente archivo se tienen los requerimientos funcionales y no funcionales para el sistema de generación de contraseñas:
+Requerimientos Funcionales
+
+    Validación de Longitud
+        El sistema debe permitir al usuario ingresar la longitud deseada para la contraseña.
+        Debe validar que la longitud ingresada sea un valor numérico y mostrar un mensaje de error si no lo es.
+        La longitud mínima de la contraseña debe ser especificada como requisito funcional.
+
+    Selección de Tipos de Caracteres
+        El sistema debe permitir al usuario seleccionar los tipos de caracteres que desea incluir en la contraseña (mayúsculas, minúsculas, números, especiales).
+        Debe asegurar que al menos un tipo de caracter esté seleccionado antes de generar la contraseña.
+
+    Generación de Contraseña
+        El sistema debe generar contraseñas aleatorias basadas en los tipos de caracteres y la longitud especificada por el usuario.
+        Debe garantizar que la contraseña generada cumpla con los tipos de caracteres seleccionados.
+        Si la contraseña generada no cumple con los requisitos, se debe generar otra hasta que cumpla.
+
+    Exportación de Contraseña
+        El sistema debe permitir al usuario exportar la contraseña generada a un archivo de texto.
+        Debe proporcionar una interfaz para que el usuario seleccione la ubicación y el nombre del archivo a exportar.
+
+    Limpieza de Campos
+        El sistema debe tener la capacidad de limpiar todos los campos de entrada y salida para facilitar la generación de una nueva contraseña.
+
+    Salida de Información
+        El sistema debe mostrar mensajes de error en caso de que ocurran problemas durante la generación o exportación de contraseñas.
+        Debe proporcionar retroalimentación al usuario sobre el éxito o fracaso de las operaciones realizadas.
+
+Requerimientos No Funcionales
+
+    Usabilidad
+        La interfaz gráfica debe ser intuitiva y fácil de usar para usuarios de cualquier nivel de habilidad.
+        Debe haber indicaciones claras sobre cómo utilizar cada función del sistema.
+
+    Seguridad
+        El sistema debe garantizar la generación de contraseñas seguras y aleatorias que cumplan con estándares de seguridad comunes.
+        Debe proteger la información sensible como las contraseñas generadas y evitar fugas de información.
+
+    Rendimiento
+        El sistema debe ser eficiente en la generación de contraseñas, evitando demoras significativas incluso con longitudes y tipos de caracteres elevados.
+        La exportación de contraseñas también debe realizarse de manera rápida y sin problemas.
+
+    Portabilidad
+        El sistema debe ser compatible con múltiples plataformas y dispositivos para permitir su uso en diferentes entornos.
+        La interfaz gráfica debe adaptarse adecuadamente a diferentes tamaños de pantalla y resoluciones.
+
+    Mantenibilidad
+        El código del sistema debe estar bien estructurado, con comentarios adecuados y prácticas de programación que faciliten su mantenimiento futuro.
+        Debe ser fácil realizar cambios o mejoras en el sistema sin causar problemas en su funcionamiento.
+
+    Fiabilidad
+        El sistema debe ser confiable y no presentar errores frecuentes durante su uso normal.
+        Se deben implementar mecanismos de manejo de errores para manejar situaciones inesperadas de manera elegante.
